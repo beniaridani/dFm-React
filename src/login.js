@@ -1,25 +1,35 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
+import bcrypt from "bcryptjs";
+
 
 function Login() {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [redirectToSignUp, setRedirectToSignUp] = useState(false);
-
+  const [checkPassword, setCheckPassword] = useState(false);
   const history = useHistory();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    
     try {
-      // Send a GET request to check if the user exists
+      // Send a POST request to check if the user exists
       const response = await axios.post(`http://localhost:5000/login`, {
         email: email,
+        password: password,
       });
-      // If the user exists, do something
-      alert("YAY!");
-      // For example, redirect the user to the dashboard
+  
+      const hash = response.data.message.password;
+      const isPasswordMatched = await bcrypt.compare(password, hash);
+      
+      if (isPasswordMatched) {
+        checkRole(response, history); 
+      } else {
+        setCheckPassword(true); 
+      }
     } catch (error) {
       console.log(error);
       setRedirectToSignUp(true);
@@ -27,9 +37,16 @@ function Login() {
         history.push("/SignUp");
       }, 2500);
     }
-    setEmail("");
-    setPassword("");
   };
+  
+
+  function checkRole(response, history) {
+    if (response.data.message.role === 'Driver') {
+      history.push("/mainPageDriver", { firstName: response.data.message.firstName });
+    } else if (response.data.message.role === 'Client') {
+      history.push("/mainPageClient", { firstName: response.data.message.firstName });
+    }
+  }
 
   return (
     <div>
@@ -43,6 +60,9 @@ function Login() {
             placeholder="Email"
             onChange={(event) => setEmail(event.target.value)}
           />
+          <p id="alert-message" style={{ display: checkPassword ? "block" : "none", color: "red" }}>
+            One of the details wrong.
+          </p>
           <input
             type="password"
             name="password"
@@ -63,3 +83,5 @@ function Login() {
 }
 
 export default Login;
+
+

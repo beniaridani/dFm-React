@@ -20,7 +20,7 @@ nav {
 
 .logo {
   padding: 0px 1.5rem;
-  color: red;
+  color: #a00000b0;
 }
 
 .nav-buttons ul li {
@@ -39,14 +39,14 @@ nav {
 }
 
 .nav-buttons ul li a:hover {
-  color: red;
+  color: #a00000b0;
 }
 
 .nav-buttons ul li a::after {
   content: ' ';
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: #a00000b0;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -80,9 +80,9 @@ nav .fa {
   .nav-buttons {
     position: absolute;
     background-color: rgb(40 42 53);
-    border: 0px 0px 0.2px 0.2px red solid;
+    border: 0px 0px 0.2px 0.2px #a00000b0;
     border-radius: 4px;
-    box-shadow: -2px 2px 4px 0px red;
+    box-shadow: -2px 2px 4px 0px #a00000b0;
     height: auto;
     width: 150px;
     top: 3rem;
@@ -116,7 +116,7 @@ nav .fa {
   content: ' ';
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: #a00000b0;
   display: block;
   margin: auto;
   transition: 1s;
@@ -145,7 +145,7 @@ nav .fa {
 }
 
 .red-letter {
-  color: red;
+  color: #a00000b0;
 }
 
 .p-header {
@@ -154,7 +154,7 @@ nav .fa {
 
 @media(max-width: 700px) {
   .first-header {
-    margin: 3rem 0px;
+    margin: 4rem 0px;
   }
 
   .f-header-content {
@@ -189,8 +189,8 @@ nav .fa {
 }
 
 .Upbutton {
-  background-color: red;
-  border: 1px solid red;
+  background-color: #a00000b0;
+  border: 1px solid #a00000b0;
   border-radius: 5px;
   color: white;
   padding: 15px 32px;
@@ -221,7 +221,7 @@ nav .fa {
   content: ' ';
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: #a00000b0;
   display: block;
   margin: 10px 0 0 0;
   transition: 1s;
@@ -273,6 +273,7 @@ footer {
 }
 
 /* ------sign up and options section------- */
+
 .SignUp {
   position: relative;
   margin: 5rem 0rem;
@@ -291,13 +292,16 @@ font-size: 3rem;
   padding: 4rem 15px;
   text-align: left;
   height: 370px;
-  background-color: rgb(22 19 19);
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/323/372/925/lamborghini-car-lamborghini-aventador-vehicle-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
   width: 18%;
   float: right;
   margin-right: 28%;
   border-radius: 15px;
   color: white;
-  border: 1px solid red;
+  
+  
 }
 
 .passenger {
@@ -306,15 +310,41 @@ font-size: 3rem;
   margin-left: 28%;
   height: 370px;
   width: 18%;
-  color: white;
-  background-color: rgb(22 19 19);
+  color: rgb(4, 4, 4);
+  background-image: url("https://c0.wallpaperflare.com/preview/179/44/15/person-man-city-street.jpg");
+  background-size: cover;
+  background-position: center;
   float: left;
   border-radius: 15px;
-  border: 1px solid red;
+
+  
+}
+.passenger h1{
+  transform: rotate(90deg);
+  float: left;
+  padding: 100px 0px 0px;
+}
+.driver h1{
+  transform: rotate(90deg);
+  float: left;
+  font-size: 3rem;
+  padding: 50px 0px 0px;
 }
 
-
 @media(max-width: 1000px) {
+  .passenger h1{
+    transform: rotate(0deg);
+    float: left;
+    padding: 100px 0px 0px;
+    margin-top: 10vh;
+  }
+  .driver h1{
+    transform: rotate(0deg);
+    float: left;
+    font-size: 3rem;
+    margin-top: 10vh;
+    font-size: 1rem;
+  }
   .SignUp{
     margin:40px 0px;
   }
@@ -335,6 +365,7 @@ font-size: 3rem;
     text-align: left;
     padding: 0 1rem;
     float: none;
+    color: white;
   }
 
   .driver {
@@ -357,7 +388,7 @@ border-radius: 12px;
 
 }
 .client-register:hover{
-  border: 1px solid red;
+  border: 1px solid #a00000b0;
   border-radius: 12px;
 
 }
@@ -367,7 +398,7 @@ border-radius: 12px;
   margin-bottom: 1rem;
   display: block;
   line-height: 2rem;
-  color: red;
+  color: #a00000b0;
   background-color: black;
   border: none;
   border-bottom: 1px solid white;
@@ -389,19 +420,19 @@ border-radius: 12px;
   border-radius: 10px;
   height: 50px;
   width: 120px;
-  background-color: red;
+  background-color: #a00000b0;
   color: white;
   transition: 0.6;
 }
 .client-register button:hover{
   background-color: black;
-  color: red;
-  border: 1px solid red;
+  color: #a00000b0;
+  border: 1px solid #a00000b0;
 
 }
 .google-button{
  float: right;
- background-color: red;
+ background-color: #a00000b0;
 }
 
 @media(max-width:1000px) {
@@ -423,15 +454,15 @@ border-radius: 12px;
 }
 .client-register:hover{
   border: none;
-  border-right:1px solid red;
-  border-left:1px solid red;
+  border-right:1px solid #a00000b0;
+  border-left:1px solid #a00000b0;
   border-radius: 12px;
 
 }
 .google-button{
  float: left;
  margin-bottom: 10px;
- background-color: red;
+ background-color: #a00000b0;
 }
 .google-button i::after{
   content: ' ';
@@ -442,9 +473,106 @@ display: none;
 color: black;
 }
 
+/* Driver's main page */
+.welcome-driver h1{
+  font-size: 3.2rem;
+}
+.welcome-driver{
+  color: rgb(204, 193, 193);
+  height: 70vh;
+  width: 35%;
+  margin: 6% 0 7% 8%;
+  float: left;
+}
+.welcome-driver h3{
+  padding-top:15%;
+  line-height: 20px;
+}
+.chat-driver{
+  background-image: url("https://i.pinimg.com/originals/9e/4d/bb/9e4dbb5d6f21fb5103360b599c6ff526.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.7;
+  height: 65vh;
+  width: 25%;
+  margin: 6% 8% 7% 5%;
+  float: right;
+  background-color: rgb(200, 191, 191);
+  border: 0.5px solid #a00000b0;
+  color: #ebebeb2d;
+  border-radius:15px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chat-driver h3{
+  position: absolute;
+  top: 20%;
+  margin: 0 0 0 35px;
+
+}
+.new-ride{
+  color: white;
+  position: relative;
+  height: 60px;
+  width: 97%;
+  margin: 5px;
+  /* bottom: 5px; */
+  border-radius: 15px;
+  border: 0.1px solid #a00000b0;
+  background-color: #1b0c0c;
+  overflow: hidden;
+}
+
+.offer-btn{
+  display:block;
+  float: left;
+  background-color: #1b0c0c;
+  border: none;
+  color:#958b8bb0 ;
+  margin: 15px 3px 0 3px;
+}
+.ride-details{
+  margin-top: 15px;
+  margin-right: 5px;
+  text-align: end;
+}
+.circle-driver{
+ line-height: 100px;
+ color: white;
+ position: relative;
+ float: left;
+ margin: 22%  12% 8% 0px;
+ padding-top: 10px;
+ height: 100px;
+ width: 100px;
+ text-align: center;
+ background-color: rgb(12, 11, 11);
+ border-radius: 100%;
+ border: 0.2px solid #a00000b0;
+}
+
 /* ------ari's style code----- */
-/*        section-heading           */
+/*        section-heading  
+         */
+
+         
+.white-section{
+  margin-top: 200px;
+  justify-content: center;
+}
+.white-section h1{
+  text-align: center;
+  
+}
+
 .section-heading {
+
   text-align: center;
   color: white;
   font-size: 3rem;
@@ -455,6 +583,16 @@ color: black;
 .container-fluid {
   padding: 3% 30px;
   
+}
+@media(max-width: 800px) {
+  .section-heading {
+    font-size: 2rem;
+    
+  }
+  #ourservices {
+    margin-top:160px;
+    
+  }
 }
 
 /*      sections      */
@@ -473,6 +611,7 @@ color: black;
 
 .service-title {
   font-size: 1.5rem;
+  
 }
 
 .service-box {
@@ -509,7 +648,7 @@ color: black;
 .service-box:hover::after,
 .service-box:hover::before {
   border-radius: 10%;
-  border-color: red;
+  border-color: #a00000b0;
   width: 100%;
   height: 100%
 }
@@ -520,13 +659,13 @@ color: black;
 }
 
 .service-box:hover .icon {
-  color: red;
+  color: #a00000b0;
 }
 
 /*     recommendations        */
 #testimonials {
   background-color: rgb(51, 51, 51);
-  color: red;
+  color: #a00000b0;
   overflow: hidden;
 }
 
@@ -550,13 +689,13 @@ color: black;
   padding-bottom: 100px;
 }
 
-#contect .section-heading {
+#contact .section-heading {
   padding-top: 0%;
 }
-.section-heading {
+/* .section-heading {
   text-align: center;
   font-size: 4rem;
-}
+} */
 
 .contact-box {
   padding: 2.5%;
@@ -569,13 +708,13 @@ color: black;
 }
 
 .contact-title {
-  color: red;
+  color: #a00000b0;
   text-shadow: 28px 28px 26px darkgrey;
   font-size: 2rem;
 }
 
 .about-title {
-  color: red;
+  color: #a00000b0;
   text-shadow: 28px 28px 26px darkgrey;
 }
 
