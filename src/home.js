@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 function Home() {
   return (
     <div>
-        <header className="first-header">
+   <header className="first-header">
   <div className="f-header-content">
     <h1 className="headerTitle">Welcome to dFm </h1>
     <h3><span className="red-letter">D</span>rive For Money</h3>
@@ -20,7 +21,7 @@ function Home() {
 </header>
 
 <section className="white-section" id="ourservices">
-  <h3 className="section-heading">Our Services</h3>
+  <h1 className="section-heading">Our Services</h1>
   <div className="container-fluid">
     <div className="row">
       <div className="service-box col-lg-4">
