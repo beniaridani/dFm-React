@@ -30,8 +30,12 @@ function DRegister() {
       console.log(response.data);
 
       // Redirect to login page after 2 seconds if the registration is successful
+      const res = await axios.post(`http://localhost:5000/login`, {
+        email: email,
+        password: password,
+      });
       setTimeout(() => {
-        history.push('/login');
+        history.push("/mainPageDriver", { firstName: res.data.message.firstName });
       }, 2000);
 
       // Reset the form

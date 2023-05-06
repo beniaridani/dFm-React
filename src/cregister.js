@@ -24,8 +24,12 @@ function CRegister() {
       console.log(response.data);
 
       // Redirect to login page after 2 seconds if the registration is successful
+      const res = await axios.post(`http://localhost:5000/login`, {
+        email: email,
+        
+      });
       setTimeout(() => {
-        history.push('/login');
+        history.push("/mainPageClient", { firstName: res.data.message.firstName });
       }, 2000);
 
       // Reset the form

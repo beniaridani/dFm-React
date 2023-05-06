@@ -24,7 +24,7 @@ nav {
 }
 
 .nav-buttons ul li {
-  display: inline-block;
+  /* display: inline-block; */
   list-style: none;
   float: right;
   padding: 0px 1.5rem;
@@ -557,6 +557,12 @@ color: black;
  border: 0.2px solid #a00000b0;
 }
 
+
+/* Client main Page. */
+.welcome-passenger {
+  color: white;
+  text-align: center;
+}
 /* ------ari's style code----- */
 /*        section-heading  
          */
