@@ -43,8 +43,8 @@ function Login() {
   function checkRole(response, history) {
     if (response.data.message.role === 'Driver') {
       history.push("/mainPageDriver", { firstName: response.data.message.firstName });
-    } else if (response.data.message.role === 'Client') {
-      history.push("/mainPageClient", { firstName: response.data.message.firstName });
+    } else {
+        history.push("/mainPageClient", { firstName: response.data.message.firstName });
     }
   }
 

@@ -23,7 +23,7 @@ function MainPageDriver() {
         <div className='chat-driver'>
             <h3>New rides will show here</h3>
             <div className='new-ride'>
-                {/* <button className='offer-btn' onClick={}>Offer</button> */}
+                <button className='offer-btn' >Offer</button>
                 <button className='offer-btn'>Take</button>
                <p className='ride-details'> From: "Jerusalem"~~To:"Bnei Brak"    </p>
             
