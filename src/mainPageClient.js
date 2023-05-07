@@ -8,11 +8,11 @@ import {useLocation} from "react-router-dom";
    const firstName = location.state.firstName;
    return (
     <div>
-        <div className="welcome-passenger">
+      <div className="welcome-passenger">
         <h1>Welcome {firstName}!</h1>
         <h3>Hope you doing well</h3>
         <p> How can we help you today?</p>
-        </div>
+      </div>  
     </div>
   );
 }
